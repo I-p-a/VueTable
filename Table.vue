@@ -10,7 +10,7 @@
         slot="items"
         slot-scope="props">
         <tr>
-          <td>
+          <td style='height:unset;'>
             <v-btn
               fab
               dark
@@ -21,7 +21,7 @@
               <v-icon dark>remove</v-icon>
             </v-btn>
             <v-edit-dialog lazy>
-              <p style='min-width: 20px;'>{{ props.item.name }}</p>
+              <p style='min-width:20px;padding-top:1em;'>{{ props.item.name }}</p>
               <v-text-field
                 slot="input"
                 label="Edit"
@@ -73,7 +73,7 @@
           color="blue-grey darken-2"
           class="white--text">
           <v-card-title primary-title>
-            <div class="headline">Unlimited music now</div>
+            <div class="headline">Add new product</div>
             <div>
               <v-text-field
                 label="Name"
